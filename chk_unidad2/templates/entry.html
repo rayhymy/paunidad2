@@ -1,0 +1,30 @@
+{% extends 'base.html'%}
+{% block body %}
+    <h2>{{ the_title }}</h2>
+
+    <form method="POST" action="/formulas">
+        <table>
+            <p>Ingresa el lado:</p>
+            <tr>
+                <td>L:</td>
+                <td><input type="number" name="l" /></td>
+            </tr>
+        </table>
+                <table>
+            <p>Ingresa la masa:</p>
+            <tr>
+                <td>M:</td>
+                <td><input type="number" name="m" /></td>
+            </tr>
+        </table>
+                <table>
+            <p>Ingresa la temperatura:</p>
+            <tr>
+                <td>T:</td>
+                <td><input type="number" name="t" /></td>
+            </tr>
+        </table>
+        <p>Presione en el boton para calcular la presion</p>
+        <p><input type="submit" name="btn_calc" value="CALCULAR" /></p>
+    </form>
+{% endblock%}

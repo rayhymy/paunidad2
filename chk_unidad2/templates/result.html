@@ -1,0 +1,36 @@
+{% extends 'base.html'%}
+{% block body%}
+    <h2>{{the_title}}</h2>
+    <p>El lado:</p>
+    <table>
+        <tr>
+            <td>{{the_l}}</td>
+        </tr>
+    </table>
+        <p>La masa</p>
+    <table>
+        <tr>
+            <td>{{the_m}}</td>
+        </tr>
+    </table>
+        <p>La temperatura</p>
+    <table>
+        <tr>
+            <td>{{the_t}}</td>
+        </tr>
+    </table>
+    <table>
+    <p>La formula usada es:</p>
+        <tr>
+            <td colspan="2">P=(L^-1)* M * (T^-2)</td>
+        </tr>
+    </table>
+    <p>La presion es:</p>
+    <table>
+        <tr>
+            <td>Presion:</td>
+            <td>{{the_result}}</td>
+        </tr>
+    </table>
+<p><a href="/entry">Return</a></p>
+{% endblock%}
